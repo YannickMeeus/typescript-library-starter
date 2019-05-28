@@ -264,7 +264,7 @@ function finalize() {
   const pkg = JSON.parse(readFileSync(jsonPackage) as any)
 
   // Note: Add items to remove from the package file here
-  delete pkg.scripts.postinstall
+  delete pkg.scripts.init
 
   writeFileSync(jsonPackage, JSON.stringify(pkg, null, 2))
   console.log(colors.green("Postinstall script has been removed"))
