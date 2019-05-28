@@ -31,7 +31,7 @@ npm run init
  - **[Prettier](https://github.com/prettier/prettier)** and **[TSLint](https://palantir.github.io/tslint/)** for code formatting and consistency
  - **Docs automatic generation and deployment** to `gh-pages`, using **[TypeDoc](http://typedoc.org/)**
  - Automatic types `(*.d.ts)` file generation
- - **[Travis](https://travis-ci.org)** integration and **[Coveralls](https://coveralls.io/)** report
+ - **[CircleCi](https://circleci.com)** integration and **[Coveralls](https://coveralls.io/)** report
  - (Optional) **Automatic releases and changelog**, using [Semantic release](https://github.com/semantic-release/semantic-release), [Commitizen](https://github.com/commitizen/cz-cli), [Conventional changelog](https://github.com/conventional-changelog/conventional-changelog) and [Husky](https://github.com/typicode/husky) (for the git hooks)
 
 ### Importing library
@@ -90,7 +90,6 @@ _Note: make sure you've setup `repository.url` in your `package.json` file_
 ```bash
 npm install -g semantic-release-cli
 semantic-release-cli setup
-# IMPORTANT!! Answer NO to "Do you want a `.travis.yml` file with semantic-release setup?" question. It is already prepared for you :P
 ```
 
 From now on, you'll need to use `npm run commit`, which is a convenient way to create conventional commits.
